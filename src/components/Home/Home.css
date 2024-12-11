@@ -1,0 +1,165 @@
+.home {
+  text-align: center;
+  padding: 5px;
+  width: 100vw;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  background: url('homepage.png') no-repeat center center fixed; /* Replace with your image path */
+  background-size: cover; /* Ensures the image covers the viewport */
+  background-color: #000; /* Fallback color */
+  box-sizing: border-box; /* Ensures padding and borders are included in width/height */
+  overflow: hidden; /* Prevent content overflow */
+}
+
+.logo {
+  width: 30%;
+  height: 25%;
+  filter: drop-shadow(0 0 10px #000); /* Black border effect around non-transparent parts */
+}
+
+
+.home h2 {
+  color: #4caf50;
+}
+
+/* Container for left and right sections */
+.home-content {
+  display: flex;
+  justify-content: space-between; /* Distribute space between left and right sections */
+  width: 100%;
+  height: 50%; /* Set the height of the main content area */
+  margin-top: 20px;
+}
+
+.HomeLeft {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 45%;
+}
+
+.HomeRight {
+  position: relative;
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cake {
+  z-index: 1;
+  margin: 0px, 0px;
+  transform: translate(28vh, 20vh) scale(1.5);
+  width: 300px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  filter: drop-shadow(0 0 33px rgba(192, 181, 157, 0.3)) brightness(1);
+  transition: filter 0.3s ease-in-out;
+}
+
+.bakeryleft {
+  z-index: 2;
+  margin: 0px, 0px;
+  transform: translate(9vh, 19vh) scale(1.8);
+  width: 300px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  filter: drop-shadow(0 0 33px rgba(192, 181, 157, 0.3)) brightness(1);
+  transition: filter 0.3s ease-in-out;
+}
+
+.bakeryright {
+  z-index: 0;
+  margin: 0px, 0px;
+  transform: translate(-70vh, 12vh) scale(5);
+  width: 300px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  filter: drop-shadow(0 0 33px rgba(192, 181, 157, 0.3)) brightness(1);
+  transition: filter 0.3s ease-in-out;
+}
+
+.steam {
+  position: absolute;
+  transform: translate(-70vh, -5vh);
+  top: 10%;
+  left: 70%;
+  width: 600px;
+  height: 200px;
+  z-index: 44;
+  opacity: 0.3;
+  filter: blur(20px);
+}
+
+.steam::before {
+  content: "";
+  width: 300px;
+  height: 200px;
+  background: linear-gradient(white, transparent);
+  opacity: 0.6;
+  border-radius: 50%;
+  animation: fadeOutUp 4s infinite;
+  display: block;
+}
+
+@keyframes fadeOutUp {
+  0% {
+    opacity: 0;
+    transform: translateY(0);
+  }
+
+  25% {
+    opacity: 0.6;
+    transform: translateY(-10px);
+  }
+
+  50% {
+    opacity: 0.3;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+}
+/* Button Styles */
+.button {
+  z-index: 4;
+  padding: 20px 45px;
+  font-size: 19px;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for both effects */
+  font-family: 'Arial', sans-serif;
+  position: relative; /* Ensures proper positioning for transforms */
+}
+
+.bake-button {
+  background-color: #f4a300; /* Orange color for a baking theme */
+  color: white;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  transform: translate(-70px, -50px); /* Position adjustment */
+}
+
+.explore-button {
+  padding: 20px 70px;
+  background-color: #ff6347; /* Tomato color for the theme */
+  color: white;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  transform: translate(-70px, 20px); /* Position adjustment */
+}
+
+.button:hover {
+  /* transform: translateY(-10px) scale(1.05); Slightly raises and enlarges the button */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Adds a shadow for depth */
+}
+
+.button:active {
+  /* transform: translateY(-5px) scale(0.95); Compresses slightly on click */
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2); /* Reduces shadow */
+}

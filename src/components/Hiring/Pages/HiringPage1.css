@@ -1,0 +1,61 @@
+/* HiringPage.css */
+body {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    overflow: hidden; /* Prevent content overflow */
+  }
+  
+  .hiring-container {
+    text-align: center;
+    padding: 5px;
+    width: 100vw;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background: url('homepage.png') no-repeat center center fixed; /* Replace with your image path */
+    background-size: cover; /* Ensures the image covers the viewport */
+    background-color: #000; /* Fallback color */
+    box-sizing: border-box; /* Ensures padding and borders are included in width/height */
+    display: flex;
+    justify-content: flex-end; /* Align content to the right */
+    align-items: center;
+  }
+  
+  .contentP1 {
+    background: rgba(255, 255, 255, 0);
+    padding: 20px;
+    /* border-radius: 10px; */
+    text-align: center;
+    height: 90vh;
+    max-width: 800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .hrlogo {
+    width: 60%;
+    height: 25%;
+    filter: drop-shadow(0 0 0.1px #000); /* Black border effect around non-transparent parts */
+  }
+  
+  .subtitle {
+    font-size: 2.3em;
+    color: #a55a4a;
+    margin-bottom: 20px;
+    font-style: italic;
+  }
+  
+  .about-section {
+    text-align: left;
+    margin-top: 20px;
+  }
+  
+  .about-section h2 {
+    font-size: 1.8em;
+    color: #6d3e3e;
+    margin-bottom: 10px;
+  }
+  
+  .about-section p {
+    font-size: 1.5em;
+    line-height: 1.6;
+    color: #333;
+  }
