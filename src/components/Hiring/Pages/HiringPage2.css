@@ -172,7 +172,7 @@
 __________
 
 MOBILE
-VIEW
+VIEW 700H
 __________ 
 
 */
@@ -302,7 +302,7 @@ __________
 }
 
 
-@media screen and (max-height: 500px) {
+@media screen and (max-height: 700px) {
 
   .mainTitle {
     font-size: 1.2rem; /* Scale down font size */
@@ -310,7 +310,7 @@ __________
 
   .donut {
 
-    transform: translate(21vh, -17.5vh) scale(0.9);
+    transform: translate(21vh, -15vh) scale(0.9);
     width: 200px;
     height: auto;
     
@@ -319,7 +319,7 @@ __________
 
   .main-subtitle {
     font-size: 1.3rem; /* Adjust font size */
-    margin: 30px 0; /* Add spacing */
+    margin: 150px 0; /* Add spacing */
     text-align: center; /* Center align */
   }
 

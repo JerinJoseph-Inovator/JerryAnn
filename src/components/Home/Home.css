@@ -164,15 +164,15 @@
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2); /* Reduces shadow */
 }
 
-@media screen and (max-height: 500px) {
+@media screen and (max-height: 600px) {
 
   .home {
   background: url('/homepage.jpg') no-repeat center center fixed;
   }
 
-  .logo {
-    transform: translateX(10vh);
-  }
+  /* .logo {
+    transform: translateX();
+  } */
 
  
 

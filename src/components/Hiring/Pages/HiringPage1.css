@@ -65,14 +65,14 @@ body {
 __________
 
 MOBILE
-VIEW
+VIEW 700 H
 __________ 
 
 */
 
-@media screen and (max-height: 500px) {
+@media screen and (max-height: 700px) {
   .hrlogo {
-    width: 40%;
+    width: 70%;
     height: 25%;
     filter: drop-shadow(0 0 0.1px #000); /* Black border effect around non-transparent parts */
   }
@@ -83,9 +83,12 @@ __________
     /* border-radius: 10px; */
     text-align: center;
     height: 90vh;
-    max-width: 675px;
+    max-width: 520px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
+  
+
+
 
   .about-section p {
     font-size: 1.2em;
@@ -96,7 +99,7 @@ __________
 
 }
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 700px) {
     .hiring-container {
       padding: 10px;
       background-color: #c8aa8f;

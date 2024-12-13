@@ -57,7 +57,7 @@
 __________
 
 MOBILE
-VIEW
+VIEW 700 H
 __________ 
 
 */
@@ -70,7 +70,7 @@ __________
     }
   }
   
-  @media screen and (max-height: 500px) {
+  @media screen and (max-height: 600px) {
     .content {
       background: rgba(0, 0, 0, 0);
       padding: 20px;
