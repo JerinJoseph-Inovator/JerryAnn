@@ -70,3 +70,15 @@ __________
     }
   }
   
+  @media screen and (max-height: 500px) {
+    .content {
+      background: rgba(0, 0, 0, 0);
+      padding: 20px;
+      border-radius: 10px;
+      max-width: max-content;
+      transform: translateY(-150px);
+    }
+    
+  
+  }
+  

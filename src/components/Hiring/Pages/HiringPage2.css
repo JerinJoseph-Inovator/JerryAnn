@@ -300,3 +300,34 @@ __________
   animation-delay: 1.2s;
 }
 }
+
+
+@media screen and (max-height: 500px) {
+
+  .mainTitle {
+    font-size: 1.2rem; /* Scale down font size */
+  }
+
+  .donut {
+
+    transform: translate(21vh, -17.5vh) scale(0.9);
+    width: 200px;
+    height: auto;
+    
+
+  }
+
+  .main-subtitle {
+    font-size: 1.3rem; /* Adjust font size */
+    margin: 30px 0; /* Add spacing */
+    text-align: center; /* Center align */
+  }
+
+  .flex-item {
+    font-size: 0.8rem; /* Adjust font size */
+   
+  }
+
+  
+
+}
