@@ -4,7 +4,7 @@
   width: 100vw;
   height: 100vh;
   font-family: Arial, sans-serif;
-  background: url('homepage.png') no-repeat center center fixed; /* Replace with your image path */
+  background: url('/homepage.jpg') no-repeat center center fixed; /* Replace with your image path */
   background-size: cover; /* Ensures the image covers the viewport */
   background-color: #000; /* Fallback color */
   box-sizing: border-box; /* Ensures padding and borders are included in width/height */
@@ -167,7 +167,7 @@
 @media screen and (max-width: 700px) {
 
   .home {
-  background: url('Mobihomepage.jpg') no-repeat center center fixed;
+  background: url('/Mobihomepage.jpg') no-repeat center center fixed;
   }
 
   .logo {
