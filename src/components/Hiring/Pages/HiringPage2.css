@@ -29,12 +29,13 @@
   height: 100%;
 }
 
-.main-title {
+.mainTitle {
   font-size: 2rem;
   font-weight: bold;
   text-align: center;
   margin-top: 30px;
   color: #FF4500;
+  transform: translate(5vh, -3vh);
   animation: slideDown 1s ease-in;
 }
 
@@ -49,7 +50,18 @@
   }
 }
 
-.top-right {
+.donut {
+  margin: 0px, 0px;
+  transform: translate(21vh, -17.5vh) scale(0.9);
+  width: 300px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  filter: drop-shadow(0 0 33px rgba(192, 181, 157, 0.3)) brightness(1);
+}
+
+
+.topRight {
   position: absolute;
   top: 30px;
   right: 50px;
@@ -76,7 +88,7 @@
   text-align: center;
   margin: 50px 0;
   color: #FF4500;
-  transform: translate(5vh, 25vh);
+  transform: translate(5vh, -15vh);
   animation: fadeIn 1.5s ease-in;
 }
 
@@ -112,14 +124,15 @@
 
 .flex-item:nth-child(1) {
   position: absolute;
-  top: 25%;
+  top: 28%;
   left: 1%;
   animation-delay: 0.2s;
 }
 
+/* High Pay */
 .flex-item:nth-child(2) {
   position: absolute;
-  top: 15%;
+  top: 20%;
   right: 35%;
   animation-delay: 0.4s;
 }
@@ -135,7 +148,7 @@
 /* Maintain.. */
 .flex-item:nth-child(4) {
   position: absolute;
-  bottom: 65%;
+  bottom: 60%;
   left: 65%;
   animation-delay: 0.8s;
 }
@@ -153,4 +166,137 @@
   bottom: 15%;
   right: 35%;
   animation-delay: 1.2s;
+}
+
+/*
+__________
+
+MOBILE
+VIEW
+__________ 
+
+*/
+
+@media screen and (max-width: 700px) {
+  .hiringPage2 {
+    padding: 10px;
+    background-color: #2b0303;
+    background: url('/Mobile_hiring/Theme/2.jpg') no-repeat center center;
+    background-size: cover; /* Ensure the background fully covers the container */
+    height: 100%; /* Fit content */
+    min-height: 100vh; /* Ensure full screen height */
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    align-items: center;
+    justify-content: flex-start; /* Align content at the top */
+    overflow: hidden; /* Prevent extra scrollbars */
+  }
+
+  .contentHR2 {
+    width: 100%; /* Full width for content */
+    max-width: 90%; /* Limit content width */
+    height: auto; /* Adjust height based on content */
+    text-align: center; /* Center align text */
+    margin-top: 20px; /* Add spacing at the top */
+  }
+
+  .mainTitle {
+    font-size: 1.4rem; /* Scale down font size */
+    margin-top: 10px; /* Adjust margin for spacing */
+    transform: translate(0vh, 0vh);
+    text-align: center; /* Align text to the center */
+    
+    animation: none; /* Disable animations for better performance */
+  }
+
+  .main-subtitle {
+    display: none;
+  }
+
+  .donut {
+    display: hidden;
+  }
+
+  .topRight {
+    font-size: 1.4rem; /* Scale down font size */
+    position: relative; /* Reset positioning */
+    margin-top: 10px; /* Add spacing at the top */
+    top: -50%;
+    right: 0;
+    animation: none; 
+  }
+
+  .main-subtitle {
+    font-size: 1.6rem; /* Adjust font size */
+    margin: 20px 0; /* Add spacing */
+    text-align: center; /* Center align */
+    animation: none; /* Disable animations */
+  }
+
+  .flex-container {
+    display: flex;
+    flex-direction: column; /* Stack flex items vertically */
+    align-items: center; /* Center align items */
+    width: 100%; /* Use full width */
+    max-width: 90%; /* Limit max width */
+    margin: 0 auto; /* Center align container */
+  }
+
+  .flex-item {
+    width: 100%; /* Full width for each item */
+    max-width: 90%; /* Limit max width */
+    font-size: 1rem; /* Adjust font size */
+    margin: 10px 0; /* Add spacing between items */
+    position: relative; /* Reset positioning */
+    text-align: center; /* Center align text */
+    animation: none; /* Disable animations */
+  }
+
+/* Flexible work */
+.flex-item:nth-child(1) {
+  position: absolute;
+  top: 80%;
+  left: 20%;
+  animation-delay: 0.2s;
+}
+
+/* High Pay */
+.flex-item:nth-child(2) {
+  position: absolute;
+  top: 60%;
+  right: 25%;
+  animation-delay: 0.4s;
+}
+
+/* Ack and Reco */
+.flex-item:nth-child(3) { 
+  position: absolute;
+  top: 157%;
+  right: 32%;
+  animation-delay: 0.6s;
+}
+
+/* Maintain.. */
+.flex-item:nth-child(4) {
+  position: absolute;
+  top: 203%;
+  left: 15%;
+  animation-delay: 0.8s;
+}
+
+/* Supportive team and incentive */
+.flex-item:nth-child(5) {
+  position: absolute;
+  top: 120%;
+  left: 30%;
+  animation-delay: 1s;
+}
+
+/* Exposure */
+.flex-item:nth-child(6) {
+  position: absolute;
+  top: 95%;
+  right: 15%;
+  animation-delay: 1.2s;
+}
 }

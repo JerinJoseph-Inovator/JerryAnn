@@ -25,9 +25,9 @@ const Home = () => {
 
         <div className="HomeRight">
           <div className="steam"></div>
-          <img className="cake" src="Cake_transparent.png" alt="Cake" />
-          <img className="bakeryleft" src="bakeryItems_BG.png" alt="Bakery Items" />
-          <img className="bakeryright" src="BakeryRight.png" alt="Bakery Items" />
+          {/* <img className="cake" src="Cake_transparent.png" alt="Cake" />
+          <img className="bakeryleft" src="bakeryItems_BG.png" alt="Bakery Items" /> */}
+          {/* <img className="bakeryright" src="BakeryRight.png" alt="Bakery Items" /> */}
         </div>
       </div>
     </div>

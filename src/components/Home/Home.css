@@ -50,7 +50,7 @@
 .cake {
   z-index: 1;
   margin: 0px, 0px;
-  transform: translate(28vh, 20vh) scale(1.5);
+  transform: translate(12vh, 17vh) scale(1.5);
   width: 300px;
   height: auto;
   display: block;
@@ -62,7 +62,7 @@
 .bakeryleft {
   z-index: 2;
   margin: 0px, 0px;
-  transform: translate(9vh, 19vh) scale(1.8);
+  transform: translate(-09vh, 19vh) scale(1.8);
   width: 300px;
   height: auto;
   display: block;
@@ -143,7 +143,7 @@
   background-color: #f4a300; /* Orange color for a baking theme */
   color: white;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
-  transform: translate(-70px, -50px); /* Position adjustment */
+  transform: translate(400px, -50px); /* Position adjustment */
 }
 
 .explore-button {
@@ -151,7 +151,7 @@
   background-color: #ff6347; /* Tomato color for the theme */
   color: white;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
-  transform: translate(-70px, 20px); /* Position adjustment */
+  transform: translate(400px, 20px); /* Position adjustment */
 }
 
 .button:hover {
@@ -162,4 +162,26 @@
 .button:active {
   /* transform: translateY(-5px) scale(0.95); Compresses slightly on click */
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2); /* Reduces shadow */
+}
+
+@media screen and (max-width: 700px) {
+
+  .home {
+  background: url('Mobihomepage.png') no-repeat center center fixed;
+  }
+
+  .logo {
+    width: 70%;
+    height: 25%;
+    filter: drop-shadow(0 0 2px #000); 
+  }
+
+  .bake-button {
+    transform: translate(20px, -50px); /* Position adjustment */
+  }
+  
+  .explore-button {
+    transform: translate(20px, 20px); /* Position adjustment */
+  }
+
 }

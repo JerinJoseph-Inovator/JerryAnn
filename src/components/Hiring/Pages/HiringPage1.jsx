@@ -8,7 +8,7 @@ const HiringPage = () => {
   return (
     <div
       className="hiring-container"
-      style={{ backgroundImage: `url(${BackgroundImage})` }}
+      // style={{ backgroundImage: `url(${BackgroundImage})` }}
     >
       <div className="contentP1">
         <img src={Logo} alt="Jerry & Ann Logo" className="hrlogo" />

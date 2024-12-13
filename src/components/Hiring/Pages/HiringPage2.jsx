@@ -6,9 +6,11 @@ const HiringPage2 = () => {
   return (
     <div className="hiringPage2">
       <div className="contentHR2">
-        <h1 className="main-title">WELCOME TO THE WORLD OF DESSERTS AND DELICACIES!</h1>
+        <h1 className="mainTitle">WELCOME TO THE WORLD <br /> OF DESSERTS AND <br />DELICACIES!</h1>
 
-        <div className="top-right">JOIN US TODAY</div>
+        <img className="donut" src="donut.png" alt="donut"/>
+
+        <span className="topRight">JOIN US TODAY</span>
 
         <h2 className="main-subtitle">We&apos;re here to serve delicious cakes <br /> in a friendly and <br /> welcoming atmosphere.</h2>
 
